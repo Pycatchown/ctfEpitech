@@ -1,0 +1,12 @@
+service magicfish
+{
+    disable = no
+    type = UNLISTED
+    wait = no
+    server = /home/magicfish/magicfish
+    socket_type = stream
+    protocol = tcp
+    user = magicfish
+    port = 5555
+    flags = REUSE
+}
