@@ -10,7 +10,7 @@ RUN groupadd ctf
 
 RUN mkdir /pwn
 
-COPY babysDontDrinkCoffe /pwn/babysDontDrinkCoffe
+COPY babysMakeTheirOwnCoffe /pwn/babysMakeTheirOwnCoffe
 COPY flag.txt /pwn/flag.txt
 COPY entry.sh /pwn/entry.sh
 
