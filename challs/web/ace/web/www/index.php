@@ -46,6 +46,6 @@ if(
     echo "</font><br />\n";
   }
   if( $successCount === count($queries) ) {
-    echo '<p>flag{7eea7182c1b1d720a3afc73f4cce2d91372bf7b9}</p>';
+    echo '<p>flag{5aa6355da6910c6289755653a6d35fdb}</p>';
   }
 }

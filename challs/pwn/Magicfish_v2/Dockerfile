@@ -9,7 +9,7 @@ RUN apt-get update
 RUN apt-get -y install build-essential xinetd gcc-multilib
 
 COPY magicfish.c /home/magicfish/
-COPY flag /home/magicfish/
+COPY flag.txt /home/magicfish/
 COPY magicfish_xinetd /etc/xinetd.d/
 
 RUN gcc -m32 -no-pie -Wl,-z,relro,-z,now magicfish.c -o /home/magicfish/magicfish
