@@ -4,4 +4,4 @@ services:
             build: web
             network_mode: bridge
             ports:
-                - "192.168.1.13:8002:80"
+                - "128.199.47.14:8002:80"

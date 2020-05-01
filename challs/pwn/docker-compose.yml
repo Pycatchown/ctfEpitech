@@ -1,0 +1,25 @@
+version: '2'
+services:
+  babysdontapologize:
+    build: BabysDontApologize
+    network_mode: bridge
+    ports:
+      - "128.199.47.14:8101:4252"
+
+  babysdontdrinkcoffe:
+    build: BabysDontDrinkCoffe
+    network_mode: bridge
+    ports:
+      - "128.199.47.14:8102:4252"
+
+  babysmaketheirowncoffe:
+    build: BabysMakeTheirOwnCoffe
+    network_mode: bridge
+    ports:
+      - "128.199.47.14:8103:4252"
+
+  magicfish:
+    build: Magicfish_v2
+    network_mode: bridge
+    ports:
+      - "128.199.47.14:8104:5555"
