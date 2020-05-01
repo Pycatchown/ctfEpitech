@@ -1,0 +1,13 @@
+version: '2'
+services:
+	AES_ECB:
+                build: aes_ecb
+		network_mode: bridge
+		ports:
+			- "128.199.47.14:8111:80"
+	AES_CBC:
+                build: aes
+		network_mode: bridge
+		network_mode: bridge
+		ports:
+			- "128.199.47.14:8112:80"
