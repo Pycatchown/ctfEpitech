@@ -1,0 +1,20 @@
+
+module my-chown 1.0;
+
+require {
+	type container_file_t;
+	type container_t;
+	class dir setattr;
+}
+
+#============= container_t ==============
+
+#!!!! This avc is a constraint violation.  You would need to modify the attributes of either the source or target types to allow this access.
+#Constraint rule: 
+#	mlsconstrain dir { ioctl read lock search } ((h1 dom h2 -Fail-)  or (t1 != mcs_constrained_type -Fail-) ); Constraint DENIED
+mlsconstrain dir { write setattr append unlink link rename add_name remove_name } ((h1 dom h2 -Fail-)  or (t1 != mcs_constrained_type -Fail-) ); Constraint DENIED
+mlsconstrain dir { relabelfrom } ((h1 dom h2 -Fail-)  or (t1 != mcs_constrained_type -Fail-) ); Constraint DENIED
+mlsconstrain dir { create relabelto } ((h1 dom h2 -Fail-)  or (t1 != mcs_constrained_type -Fail-) ); Constraint DENIED
+
+#	Possible cause is the source level (s0:c449,c707) and target level (s0:c481,c602) are different.
+allow container_t container_file_t:dir setattr;

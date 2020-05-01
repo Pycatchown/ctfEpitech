@@ -1,4 +1,3 @@
-
 <?php
 
     function encrypt($string) {
@@ -53,7 +52,7 @@
     <?php if ($level >= 2000000000) { ?>
         <br/>
         <h3>
-            <span style='color:white'>Wow! He is S rank! epiCTF{c00ki3s_aR3_F0r_[Tr4ck1nG]}</span>
+            <span style='color:white'>Wow! He is S rank! flag{c00ki3s_aR3_F0r_[Tr4ck1nG]}</span>
         </h3>
     <?php } ?>
 

@@ -1,0 +1,17 @@
+version: '2'
+services: 
+  db:
+    build: db
+    network_mode: bridge
+    environment:
+      - MYSQL_USER=ctf
+      - MYSQL_PASSWORD=Jie2Roh8ohre3Ahn
+      - MYSQL_DATABASE=ctf
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+  www:
+    build: web
+    network_mode: bridge
+    ports:
+      - "192.168.1.13:8001:80"
+    links:
+      - db
