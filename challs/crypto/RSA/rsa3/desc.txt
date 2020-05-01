@@ -1,0 +1,4 @@
+Hi bob, that's me again.
+Here is my message: "96740032149908015501723272976001950891".
+I also heard you lost your private key, what a shame.
+I sent you your public key, you should be able to recover your key with it.

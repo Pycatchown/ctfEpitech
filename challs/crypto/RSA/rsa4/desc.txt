@@ -1,0 +1,3 @@
+My friends said they had a prime factor in common when generating their key.
+I'm pretty sure it isn't right, maybe you can help me prove them wrong...
+
