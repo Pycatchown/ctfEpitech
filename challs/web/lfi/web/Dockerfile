@@ -5,3 +5,5 @@ RUN \
     apt-get update
 
 COPY www/ /var/www/html
+
+EXPOSE 80

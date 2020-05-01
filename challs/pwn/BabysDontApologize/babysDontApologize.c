@@ -13,6 +13,8 @@ int main(void)
 {
     char apologie[123];
 
+    setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stdin, NULL, _IONBF, 0);
     puts("You lied to me at the previous step. So I closed the cupboard with the coffe inside.");
     puts("I'm waiting for your apologie.");
 

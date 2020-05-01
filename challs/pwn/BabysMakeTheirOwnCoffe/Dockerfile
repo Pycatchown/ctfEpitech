@@ -1,4 +1,4 @@
-FROM i386/ubuntu:latest
+FROM ubuntu:latest
 
 env DEBIAN_FRONTEND="noninteractive"
 

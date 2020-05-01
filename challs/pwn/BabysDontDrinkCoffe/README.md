@@ -5,7 +5,7 @@ Challenge that aims to test stack manipulation skills. Entry-level difficulty.
 
 sudo docker build -t babysdontdrinkcoffe .
 
-sudo docker run --rm -it -p 4252:4252 babysdontdrinkcoffe
+sudo docker run --rm -it -p 81001:4252 babysdontdrinkcoffe
 
 # Solution 
 Read exploit.py

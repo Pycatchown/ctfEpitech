@@ -1,4 +1,4 @@
-FROM i386/ubuntu:latest
+FROM ubuntu:latest
 
 env DEBIAN_FRONTEND="noninteractive"
 
@@ -10,7 +10,7 @@ RUN groupadd ctf
 
 RUN mkdir /pwn
 
-COPY babysDontDrinkCoffe /pwn/babysDontDrinkCoffe
+COPY babysDontApologize /pwn/babysDontApologize
 COPY flag.txt /pwn/flag.txt
 COPY entry.sh /pwn/entry.sh
 
